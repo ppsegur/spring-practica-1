@@ -41,8 +41,15 @@ public class Alumno {
 			this.edad = edad;
 			this.curso = curso;
 		}
-	
+		//metodos helper
+		public void addToCurso(Curso curso) {
+			this.curso = curso;
+			curso.getAlumnos().add(this);
+		}
 		
-		
+		public void removeFromCurso(Curso curso) {
+			curso.getAlumnos().remove(this);
+			this.curso = null;		
+		}
 
 }
