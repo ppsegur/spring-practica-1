@@ -25,6 +25,7 @@ public class mainDeMentira {
 	@PostConstruct
 	void ejecutar() {
 		
+		
 		Curso c = new Curso("1 Dam", "Miguel Campos");
 		Crepo.save(c);
 		Alumno a = new Alumno("Luis Miguel","López Magaña", 25, c);

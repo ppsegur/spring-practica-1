@@ -41,6 +41,7 @@ public class Alumno {
 			this.edad = edad;
 			this.curso = curso;
 		}
+		
 		//metodos helper
 		public void addToCurso(Curso curso) {
 			this.curso = curso;

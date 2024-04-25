@@ -34,6 +34,39 @@ public class Curso {
 		this.nombre = nombre;
 		this.tutor = tutor;
 	}
+
+	public Long getID() {
+		return ID;
+	}
+
+	public void setID(Long iD) {
+		ID = iD;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTutor() {
+		return tutor;
+	}
+
+	public void setTutor(String tutor) {
+		this.tutor = tutor;
+	}
+
+	public List<Alumno> getAlumnos() {
+		return alumnos;
+	}
+
+	public void setAlumnos(List<Alumno> alumnos) {
+		this.alumnos = alumnos;
+	}
+
 	
 	
 }
