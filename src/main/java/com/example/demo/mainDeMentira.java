@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.function.Consumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.info.ProjectInfoProperties.Build;
 import org.springframework.stereotype.Component;
 
 import com.example.modelo.Alumno;
@@ -26,7 +27,7 @@ public class mainDeMentira {
 	void ejecutar() {
 		
 		
-		Curso c = new Curso("1 Dam", "Miguel Campos");
+		/*Curso c = new Curso("1 Dam", "Miguel Campos");
 		Crepo.save(c);
 		Alumno a = new Alumno("Luis Miguel","López Magaña", 25, c);
 		
@@ -34,9 +35,17 @@ public class mainDeMentira {
 		a.addToCurso(c);
 		repo.save(a);
 		repo.findAll().forEach(System.out::println);
+		*/
+		Alumno a3 = Alumno.builder()
+		.nombre("LuisMiguel")
+		.apellidos("Lopez Magaña")
+		.email("luuismilopez@triana.salesinaos.edu")
+		.build();
 		
-	}
 
+		}
+	
+	
 	
 		/*//repo.findAll().forEach(a -> System.out.println(a))
 		//repo.findAll().forEach(System.out::println);

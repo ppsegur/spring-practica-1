@@ -12,6 +12,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,7 +21,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Table(name="alumnado")
+@Builder //MainDeMentira
 public class Alumno {
+
+		public Alumno(Long id, String nombre, String apellido, float edad, Curso curso) {
+		super();
+		Id = id;
+		this.nombre = nombre;
+		Apellido = apellido;
+		this.edad = edad;
+		this.curso = curso;
+	}
 
 		@Id @GeneratedValue
 		private Long Id;
