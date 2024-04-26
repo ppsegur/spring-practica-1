@@ -15,14 +15,12 @@ import jakarta.annotation.PostConstruct;
 
 @Component
 public class mainDeMentira {
-	 
+
 	@Autowired
 	private AlumnoRepository repo;
-	  @Autowired
-	  private CursoRepository Crepo;
-	  
-	  
-	
+	@Autowired
+	private CursoRepository Crepo;
+
 	@PostConstruct
 	void ejecutar() {
 		
@@ -38,17 +36,16 @@ public class mainDeMentira {
 		*/
 		Alumno a3 = Alumno.builder()
 		.nombre("LuisMiguel")
-		.apellidos("Lopez Magaña")
-		.email("luuismilopez@triana.salesinaos.edu")
+		.Apellido("Lopez Magaña")
+		.edad(25)
 		.build();
 		
 
 		}
-	
-	
-	
-		/*//repo.findAll().forEach(a -> System.out.println(a))
-		//repo.findAll().forEach(System.out::println);
-		//repo.findAll().forEach (new Consumer<Alumno>());
-	*/
+
+	/*
+	 * //repo.findAll().forEach(a -> System.out.println(a))
+	 * //repo.findAll().forEach(System.out::println); //repo.findAll().forEach (new
+	 * Consumer<Alumno>());
+	 */
 }

@@ -1,8 +1,5 @@
 package com.example.modelo;
 
-import java.util.List;
-
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ForeignKey;
@@ -21,17 +18,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Table(name="alumnado")
-@Builder //MainDeMentira
+@Builder
+//MainDeMentira
 public class Alumno {
-
-		public Alumno(Long id, String nombre, String apellido, float edad, Curso curso) {
-		super();
-		Id = id;
-		this.nombre = nombre;
-		Apellido = apellido;
-		this.edad = edad;
-		this.curso = curso;
-	}
 
 		@Id @GeneratedValue
 		private Long Id;
